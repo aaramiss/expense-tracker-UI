@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wallet test</title>
+    <link rel="stylesheet" href="css/fontawesome-free-5.15.4-web/css/all.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <header id="header">
+            <div class="wallet-balance">
+                <div class="first-line">
+                    <span class="title">Wallet Balance</span>
+                    <span class="date">April 12, 2021</span>
+                </div>
+                <div class="second-line">
+                    <span class="cost">$0.00<i class="fa fa-pen"></i></span>
+                    <span class="unit">USD</span>
+                </div>
+            </div>
+
+        </header>
+        <main id="main">
+            <form action="POST" id="info-form">
+                <div class="form-group">
+                    <label for="amount" id="amount-label">Enter amount</label>
+                    <input type="number" min="0" max="100000" class="form-control" name="amount" id="amount" required>
+                </div>
+                <div class="form-group">
+                    <p class="title-txt">Note</p>
+                    <textarea class="form-control" name="note" id="note"></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="date" id="date-label">Date</label>
+                    <input type="date" class="form-control" name="date" id="date">
+                </div>
+                <div class="form-group mg-bottom">
+                    <p>Category</p>
+                    <select name="cat" id="dropdown" class="form-control">
+                        <option value="Income" selected>Income</option>
+                        <option value="Outgo">Outgo</option>
+                    </select>
+                </div>
+                <div class="form-btns">
+                    <a href="#" class="cancel-link">Cancel</a>
+                    <button type="submit" class="save-btn" id="transaction">Save Transaction</button>
+                </div>
+            </form>
+        </main>
+        <footer id="footer">
+            <p class="desc-foot">
+                Build with React, Emotion and Next.
+                <i class="fa fa-heart"></i>
+            </p>
+        </footer>
+    </div>
+<script src="./js/app.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,248 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+}
+
+.container {
+    width: 43%;
+    margin: 0 auto;
+}
+@media (max-width: 36.9rem) {
+    .container {
+        width: 65%;
+    }
+    
+}
+@media (min-width: 36rem) {
+    .container {
+        max-width: 33.75rem;
+    }
+}
+
+@media (min-width: 48rem) {
+    .container {
+        max-width: 45rem;
+    }
+}
+
+a {
+    text-decoration: none;
+    color: #000000;
+}
+/*----------------------------------
+fonts
+-----------------------------------*/
+
+/* latin-ext */
+
+@font-face {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 300;
+    font-display: swap;
+    src: url(../fonts/pxiByp8kv8JHgFVrLDz8Z1JlFc-K.woff2) format('woff2');
+    unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+/* latin */
+
+@font-face {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 300;
+    font-display: swap;
+    src: url(../fonts/pxiByp8kv8JHgFVrLDz8Z1xlFQ.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+/* latin-ext */
+
+@font-face {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(../fonts/pxiEyp8kv8JHgFVrJJnecmNE.woff2) format('woff2');
+    unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+/* latin */
+
+@font-face {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(../fonts/pxiEyp8kv8JHgFVrJJfecg.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+/*--------------------------------*/
+
+#header .wallet-balance {
+    margin-top: 4rem;
+    color: #cccccc;
+    background: #01000e;
+    border-radius: 0.5rem;
+    padding: 1.5rem;
+}
+
+.first-line {
+    display: flex;
+    justify-content: space-between;
+}
+
+.second-line {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 3rem;
+}
+
+.second-line .cost {
+    display: flex;
+    align-items: center;
+    font-weight: 600;
+    font-size: 2rem;
+    color: #ffffff;
+}
+.cost .fa-pen {
+    color: #ffe606;
+    font-size: .8rem;
+    padding-left: .7rem;
+}
+#info-form {
+    margin-top: 5rem;
+}
+input[type = date] {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+}
+
+.form-control:focus-visible {
+    outline: none;
+}
+
+label {
+    display: inline-block;
+    margin-bottom: .7rem;
+    font-weight: 600;
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+.mg-bottom {
+    padding-bottom: 3rem;
+    border-bottom: 0.125rem solid #cac8c8;
+}
+.form-group p {
+    font-weight: 600;
+    margin-bottom: .7rem;
+}
+
+.form-control {
+    display: block;
+    width: 100%;
+    border: 0.063rem solid #cac8c8;
+    border-radius: .4rem;
+    padding: .8rem;
+}
+.form-btns {
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem 0 ;
+}
+.form-btns #transaction {
+    padding: .5rem;
+    border: none;
+    background-color: #ffe606;
+    font-weight: 600;
+    transition: background-color 0.5s ease-in-out;
+}
+.form-btns #transaction:hover {
+    background-color: #ffb406;
+}
+.form-btns #transaction:active {
+    background-color: #ffb406;
+}
+#footer {
+    text-align: center;
+    padding-bottom: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+
+}
+.desc-foot {
+    color: #a8a7a7;
+}
+.fa-heart {
+    color: #f60000;
+}
+select option {
+    color: #ffffff !important;
+    background-color: #666666 !important;
+}
+
+/*
+--------------------------------------
+page styles
+--------------------------------------
+*/
+#selection {
+    margin-bottom: 6rem;
+}
+.second-btn {
+    justify-content: flex-end;
+    
+}
+.second-btn #transaction {
+    padding: .5rem .8rem;
+}
+.add-btn .fa-plus {
+    padding-right: .6rem;
+}
+#page-date p {
+    font-weight: bold;
+    color: #727272;
+}
+#selection .list-items {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: .063rem solid #e7e3e3;
+    padding: 1rem 0;
+
+}
+.list-items .info, .value {
+    display: flex;
+    align-items: center;
+   
+}
+.list-items .info span {
+    padding: 2rem;
+    font-weight: 900;
+    font-size: 1.5rem;
+}
+.description .category {
+    font-weight: 600;
+}
+.description .item {
+    color: #bdb6b6;
+}
+.list-items .value span {
+    font-weight: 600;
+}
+.value .income {
+    color: #099e11;
+}
+.value .expense {
+    color: #cf3131;
+
+}
